@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Survey form</title>
+        <style type="Text/css">
+            body{
+                background-color:rgba(39, 228, 235, 0.973);
+                color: white;
+            }
+            .bg{
+                text-align: center;
+            }
+            .form{
+                background-color: rgb(13, 13, 58);
+                width: fit-content ;
+                padding-left: 15px;
+                padding-right: 20px;
+                text-align: left;
+                padding-top: 10px;
+                padding-bottom: 10px;
+            }
+            .position{
+                padding-left: 450px;
+                
+            }
+            input{
+                color: black;
+                
+            }
+            #input{
+                width: 400px;
+            }
+            .select{
+                width: 400px;
+            }
+            #comment{
+                width: 400px;
+                height: 100px;
+            }
+            #btn{
+                width: 400px;
+                background-color: green;
+                color: white;
+                outline: none;
+            }
+           
+        </style>
+    </head>
+    <body>
+        <div class="bg">
+           <p>QuizerMania Survey Form</p>
+           <p><i>Thanks for taking the time to help us improve the platform</i></p>
+           <div class="position">
+            <div class="form">
+                <div class="head">
+                  <label for="Name">Name</label><br>
+                  <input id="input" for="name" max="12" min="5" title="Alphanumeric value" required placeholder="Enter your name"/>
+                  <p>
+                   <label for="Email">Email</label><br>
+                   <input id="input" for="Email" required placeholder="Enter your Email"/>
+                  </p>
+                  <label for="Age">Age (optional)</label><br>
+                  <input id="input" for="Age" min="1990-01-01" required placeholder="Age "/>
+                </div>  
+              <div>
+               <Label>Which option best describe your best food</Label>
+               <p><select class="select" name="Food"></p>
+                  <option>Rice</option>
+                  <option>Garri</option>
+                  <option>Eba</option>
+                  <option>Potato</option>
+                  <option>Salad</option>
+                  <option>Indomie</option>
+                  <option>Sausage</option>
+                  <option>Semo</option>  
+               </select>
+              </div>
+             <div>
+                <p>Would you recommend QuizerMania to a friend</p> 
+                <input type="radio" value="definitely" id="definitely"/>
+                <label for="definitely">Definitely</label><br>
+                <input type="radio" value="maybe" id="maybe"/>
+                <label for="maybe">Maybe</label><br>
+                <input type="radio" value="not-sure" id="not-sure"/>
+                <label for="not-sure">Not sure</label>
+                <p>What would youlike to see improved(Check all that apply) </p>
+                <input type="Checkbox" id="a"/>
+                <label for="a">Front-End project</label><br>
+                <input type="Checkbox" id="b"/>
+                <label for="b">Back-End project</label><br>
+                <input type="Checkbox" id="c"/>
+                <label for="c">Data-Visualization</label><br>
+                <input type="Checkbox" id="d"/>
+                <label for="d">Challenges</label><br>
+                <input type="Checkbox" id="e"/>
+                <label for="e">Open source community</label><br>
+                <input type="Checkbox" id="f"/>
+                <label for="f">Videos</label><br>
+                <input type="Checkbox" id="g"/>
+                <label for="g">City Meetraps</label><br>
+                <input type="Checkbox" id="h"/>
+                <label for="h">Wiki</label><br>
+                <input type="Checkbox" id="i"/>
+                <label for="i">Forum</label><br>
+                <input type="Checkbox" id="j"/>
+                <label for="j">Additional courses</label><br>
+                <label for="Comment">Any comment or suggestion?</label><br>
+                <input id="comment" for="comment" required placeholder="Enter your comment here..."/><br><br>
+                <button id="btn">Submit</button>
+             </div>
+            </div>
+           </div> 
+        </div>
+    </body>
+</html>
